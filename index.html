@@ -21,6 +21,7 @@
             font-family: Georgia, 'Times New Roman', serif;
             color: white;
             overflow: hidden;
+            position: relative;
         }
 
         .title {
@@ -93,6 +94,26 @@
             flex-shrink: 0;
         }
 
+        .email {
+            position: absolute;
+            bottom: 40px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            opacity: 0.75;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
+
+        .email a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .email a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
         @media (max-width: 480px) {
             .title {
                 font-size: 3.2rem;
@@ -104,6 +125,10 @@
             .btn {
                 padding: 9px 14px;
                 font-size: 13px;
+            }
+            .email {
+                font-size: 0.95rem;
+                bottom: 30px;
             }
         }
     </style>
@@ -139,6 +164,10 @@
                 Apple Music
             </a>
         </div>
+    </div>
+
+    <div class="email">
+        <a href="mailto:maakifyuh@gmail.com">maakifyuh@gmail.com</a>
     </div>
 
 </body>
